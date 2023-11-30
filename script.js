@@ -1,7 +1,7 @@
 'use strict';
 
-const kick = document.querySelector('.kick');
-const audioKick = document.querySelector('.a-kick');
+const bass = document.querySelector('.bass');
+const audioBass = document.querySelector('.a-bass');
 
 const crash = document.querySelector('.crash');
 const audioCrash = document.querySelector('.a-crash');
@@ -15,12 +15,12 @@ const audioSnare = document.querySelector('.a-snare');
 const tom = document.querySelector('.tom');
 const audioTom = document.querySelector('.a-tom');
 
-const settingKick = document.querySelectorAll('.setting__kick');
+const settingBass = document.querySelectorAll('.setting__bass');
 
 
 
-kick.addEventListener('click', () => {
-  audioKick.play();
+bass.addEventListener('click', () => {
+  audioBass.play();
 });
 
 crash.addEventListener('click', () => {
@@ -41,8 +41,8 @@ tom.addEventListener('click', () => {
 
 document.addEventListener('keydown', (e) => {
   if (e.code === 'KeyZ') {
-    audioKick.play();
-    kick.classList.add('kick-blue');
+    audioBass.play();
+    bass.classList.add('play-blue');
   }
   if (e.code === 'KeyX') {
     audioCrash.play();
@@ -59,13 +59,13 @@ document.addEventListener('keydown', (e) => {
 });
 document.addEventListener('keyup', (e) => {
   if (e.code === 'KeyZ') {
-    kick.classList.remove('kick-blue');
+    bass.classList.remove('play-blue');
   }
 })
 
 
-for (let i = 0; i < settingKick.length; i++) {
-  settingKick[i].addEventListener('click', () => {
-    settingKick[i].classList.toggle('setting__kick--active');
+for (let i = 0; i < settingBass.length; i++) {
+  settingBass[i].addEventListener('click', () => {
+    settingBass[i].classList.toggle('setting__bass--active');
   });
 }
