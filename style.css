@@ -4,10 +4,10 @@ body {
 
 
 
-.kick:active {
+.bass:active {
   background-color: blue;
 }
-.kick-blue {
+.play-blue {
   background-color: blue;
 }
 
@@ -22,7 +22,7 @@ body {
   background-color: antiquewhite;
 }
 
-.setting__kicks {
+.setting__basses {
   width: 480px;
   height: 40px;
   background-color: black;
@@ -33,12 +33,12 @@ body {
   align-items: center;
 }
 
-.setting__kick {
+.setting__bass {
   width: 28px;
   height: 28px;
   background-color: red;
 }
 
-.setting__kick--active {
+.setting__bass--active {
   background-color: yellow;
 }
