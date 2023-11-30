@@ -1,0 +1,38 @@
+.kick:active {
+  background-color: blue;
+}
+.kick-blue {
+  background-color: blue;
+}
+
+
+
+
+
+
+.setting {
+  width: 500px;
+  height: 250px;
+  background-color: antiquewhite;
+}
+
+.setting__kicks {
+  width: 480px;
+  height: 40px;
+  background-color: black;
+  margin-left: 10px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.setting__kick {
+  width: 28px;
+  height: 28px;
+  background-color: red;
+}
+
+.setting__kick--active {
+  background-color: yellow;
+}
