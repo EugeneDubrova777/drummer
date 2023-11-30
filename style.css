@@ -1,3 +1,9 @@
+body {
+  background-color: rgb(24, 119, 192);
+}
+
+
+
 .kick:active {
   background-color: blue;
 }
