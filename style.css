@@ -1,7 +1,7 @@
 body {
   background-color: rgb(24, 119, 192);
 }
-
+/* 
 
 
 .bass:active {
@@ -41,4 +41,103 @@ body {
 
 .setting__bass--active {
   background-color: yellow;
+} */
+
+.drums {
+  position: relative;
+  max-width: 50%;
+  margin: 5% auto;
+}
+
+.crash {
+  max-width: 150px;
+  height: 50px;
+  background-color: #d3db66;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+  left: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.crash:hover {
+  background-color: #d3b066;
+}
+
+.snare {
+  max-width: 90px;
+  height: 50px;
+  border: 1px solid #000;
+  position: relative;
+  top: -40px;
+  left: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bass {
+  max-width: 175px;
+  min-height: 175px;
+  background-color: #5b83db;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #000;
+  position: relative;
+  top: -100px;
+  left: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bass:hover {
+  background-color: #5b43db;
+}
+
+
+.tom1 {
+  max-width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  position: relative;
+  top: 20px;
+  left: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tom2 {
+  max-width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  position: relative;
+  top: -40px;
+  left: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hat {
+  max-width: 85px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  top: -300px;
+  left: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
