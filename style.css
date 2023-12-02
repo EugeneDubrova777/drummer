@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(24, 119, 192);
+  background-color: white;
 }
 /* 
 
@@ -44,12 +44,72 @@ body {
 } */
 
 .drums {
-  position: relative;
+  position: absolute;
   max-width: 50%;
-  margin: 5% auto;
+  margin: 10% auto;
 }
 
+.bass {
+  position: relative;
+  top: -120px;
+  left: 50%;
+  width: 500px;
+}
 .crash {
+  position: relative;
+  top: -620px;
+  left: 50%;
+  width: 500px;
+}
+.floor-tom {
+  position: relative;
+  top: -1120px;
+  left: 50%;
+  width: 500px;
+}
+.hi-hat {
+  position: relative;
+  top: -1640px;
+  left: 50%;
+  width: 500px;
+}
+.ride {
+  position: relative;
+  top: -2140px;
+  left: 50%;
+  width: 500px;
+}
+.snare {
+  position: relative;
+  top: -2640px;
+  left: 50%;
+  width: 500px;
+}
+.tom {
+  position: relative;
+  top: -3140px;
+  left: 50%;
+  width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .crash {
   max-width: 150px;
   height: 50px;
   background-color: #d3db66;
@@ -140,4 +200,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */

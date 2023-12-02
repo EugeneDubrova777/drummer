@@ -43,7 +43,7 @@ window.addEventListener('keydown', (e) => {
   if (e.code === 'KeyX') {
     audioBass.play();
   }
-  if (e.code === 'KeyQ') {
+  if (e.code === 'KeyW') {
     audioCrash.play();
   }
   // if (e.code === 'KeyC') {
