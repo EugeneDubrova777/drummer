@@ -6,16 +6,22 @@ const audioBass = document.querySelector('.a-bass');
 const crash = document.querySelector('.crash');
 const audioCrash = document.querySelector('.a-crash');
 
-// const hat = document.querySelector('.hat');
-// const audioHat = document.querySelector('.a-hat');
+const hat = document.querySelector('.hat');
+const audioHat = document.querySelector('.a-hat');
 
-// const snare = document.querySelector('.snare');
-// const audioSnare = document.querySelector('.a-snare');
+const snare = document.querySelector('.snare');
+const audioSnare = document.querySelector('.a-snare');
 
-// const tom = document.querySelector('.tom');
-// const audioTom = document.querySelector('.a-tom');
+const tom = document.querySelector('.tom');
+const audioTom = document.querySelector('.a-tom');
 
-// const settingBass = document.querySelectorAll('.setting__bass');
+const floorTom = document.querySelector('.floor-tom');
+const audioFloorTom = document.querySelector('.a-floor-tom');
+
+const ride = document.querySelector('.ride');
+const audioRide = document.querySelector('.a-ride');
+
+
 
 
 
@@ -27,17 +33,25 @@ crash.addEventListener('click', () => {
   audioCrash.play();
 });
 
-// hat.addEventListener('click', () => {
-//   audioHat.play();
-// });
+hat.addEventListener('click', () => {
+  audioHat.play();
+});
 
-// snare.addEventListener('click', () => {
-//   audioSnare.play();
-// });
+snare.addEventListener('click', () => {
+  audioSnare.play();
+});
 
-// tom.addEventListener('click', () => {
-//   audioTom.play();
-// });
+tom.addEventListener('click', () => {
+  audioTom.play();
+});
+
+floorTom.addEventListener('click', () => {
+  audioFloorTom.play();
+});
+
+ride.addEventListener('click', () => {
+  audioRide.play();
+});
 
 window.addEventListener('keydown', (e) => {
   if (e.code === 'KeyX') {
@@ -46,25 +60,24 @@ window.addEventListener('keydown', (e) => {
   if (e.code === 'KeyW') {
     audioCrash.play();
   }
-  // if (e.code === 'KeyC') {
-  //   audioHat.play();
-  // }
-  // if (e.code === 'KeyV') {
-  //   audioSnare.play();
-  // }
-  // if (e.code === 'KeyB') {
-  //   audioTom.play();
-  // }
+  if (e.code === 'KeyA') {
+    audioHat.play();
+  }
+  if (e.code === 'KeyS') {
+    audioSnare.play();
+  }
+  if (e.code === 'KeyT') {
+    audioRide.play();
+  }
+  if (e.code === 'KeyF') {
+    audioFloorTom.play();
+  }
+  if (e.code === 'KeyD') {
+    audioTom.play();
+  }
 });
 // document.addEventListener('keyup', (e) => {
 //   if (e.code === 'KeyZ') {
 //     bass.classList.remove('play-blue');
 //   }
 // })
-
-
-// for (let i = 0; i < settingBass.length; i++) {
-//   settingBass[i].addEventListener('click', () => {
-//     settingBass[i].classList.toggle('setting__bass--active');
-//   });
-// }
