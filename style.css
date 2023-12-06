@@ -1,96 +1,27 @@
 body {
   background-color: white;
 }
-/* 
-
-
-.bass:active {
-  background-color: blue;
-}
-.play-blue {
-  background-color: blue;
-}
-
-
-
-
-
-
-.setting {
-  width: 500px;
-  height: 250px;
-  background-color: antiquewhite;
-}
-
-.setting__basses {
-  width: 480px;
-  height: 40px;
-  background-color: black;
-  margin-left: 10px;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.setting__bass {
-  width: 28px;
-  height: 28px;
-  background-color: red;
-}
-
-.setting__bass--active {
-  background-color: yellow;
-} */
 
 .drums {
-  position: absolute;
-  max-width: 50%;
-  margin: 10% auto;
+  margin: 2% auto;
+  background-color: aquamarine;
 }
 
-.bass {
-  position: relative;
-  top: -120px;
-  left: 50%;
-  width: 500px;
+.image {
+  width: 150px;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.crash {
-  position: relative;
-  top: -620px;
-  left: 50%;
-  width: 500px;
+
+.image:hover {
+  box-shadow: 0 0 80px red inset;
+  transition: 0.3s;
 }
-.floor-tom {
-  position: relative;
-  top: -1120px;
-  left: 50%;
-  width: 500px;
+
+.image:not(:hover) {
+  transition: 0.3s;
 }
-.hi-hat {
-  position: relative;
-  top: -1640px;
-  left: 50%;
-  width: 500px;
-}
-.ride {
-  position: relative;
-  top: -2140px;
-  left: 50%;
-  width: 500px;
-}
-.snare {
-  position: relative;
-  top: -2640px;
-  left: 50%;
-  width: 500px;
-}
-.tom {
-  position: relative;
-  top: -3140px;
-  left: 50%;
-  width: 500px;
-}
+
 
 
 
