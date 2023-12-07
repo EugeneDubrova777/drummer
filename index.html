@@ -7,45 +7,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>drummer</h1>
+  <h1 class="title">Drummer</h1>
+
+  <div class="drums keys">
+    <div class="top-row row">
+      <div data-key="87" class="drum key">
+        <kbd>W - </kbd>
+        <img src="img/crash.png" alt="crash" class="crash image">
+      </div>
+      <div data-key="84" class="drum key">
+        <kbd>T - </kbd>
+        <img src="img/ride.png" alt="ride" class="ride image">
+      </div>
+    </div>
   
-  <button class="bass">bass</button>
-  <audio class="a-bass" src="audio/bass.mp3"></audio>
-
-  <button class="crash">crash</button>
-  <audio class="a-crash" src="audio/crash.mp3"></audio>
-
-  <button class="hat">hat</button>
-  <audio class="a-hat" src="audio/hat.mp3"></audio>
-
-  <button class="snare">snare</button>
-  <audio class="a-snare" src="audio/snare.mp3"></audio>
-
-  <button class="tom">tom</button>
-  <audio class="a-tom" src="audio/tom1.mp3"></audio>
-
-
-  <div class="setting">
-    <div class="setting__basses">
-      <div class="setting__bass">1</div>
-      <div class="setting__bass">2</div>
-      <div class="setting__bass">3</div>
-      <div class="setting__bass">4</div>
-      <div class="setting__bass">5</div>
-      <div class="setting__bass">6</div>
-      <div class="setting__bass">7</div>
-      <div class="setting__bass">8</div>
-      <div class="setting__bass">9</div>
-      <div class="setting__bass">10</div>
-      <div class="setting__bass">11</div>
-      <div class="setting__bass">12</div>
-      <div class="setting__bass">13</div>
-      <div class="setting__bass">14</div>
-      <div class="setting__bass">15</div>
-      <div class="setting__bass">16</div>
-
+    <div class="middle-row row">
+      <div data-key="65" class="drum key">
+        <kbd>A - </kbd>
+        <img src="img/hi-hat.png" alt="hi-hat" class="hat image">
+      </div>
+      <div data-key="83" class="drum key">
+        <kbd>S - </kbd>
+        <img src="img/snare.png" alt="snare" class="snare image">
+      </div>
+      <div data-key="68" class="drum key">
+        <kbd>D - </kbd>
+        <img src="img/tom.png" alt="tom" class="tom image">
+      </div>
+    </div>
+  
+    <div class="bottom-row row">
+      <div data-key="88" class="drum key">
+        <kbd>X - </kbd>
+        <img src="img/bass.png" alt="bass" class="bass image">
+      </div>
+      <div data-key="86" class="drum key">
+        <kbd>V - </kbd>
+        <img src="img/floor-tom.png" alt="floor-tom" class="floor-tom image">
+      </div>
     </div>
   </div>
+
+  
+
+  <audio data-key="87" class="a-crash" src="audio/crash.mp3"></audio>
+  <audio data-key="84" class="a-ride" src="audio/ride.mp3"></audio>
+  <audio data-key="65" class="a-hat" src="audio/hat.mp3"></audio>
+  <audio data-key="83" class="a-snare" src="audio/snare.mp3"></audio>
+  <audio data-key="68" class="a-tom" src="audio/tom1.mp3"></audio>
+  <audio data-key="88" class="a-bass" src="audio/bass.mp3"></audio>
+  <audio data-key="86" class="a-floor-tom" src="audio/floor-tom.mp3"></audio>
+
   
 
   <script src="script.js"></script>

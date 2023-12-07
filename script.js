@@ -1,71 +1,107 @@
 'use strict';
 
-const bass = document.querySelector('.bass');
-const audioBass = document.querySelector('.a-bass');
+// const bass = document.querySelector('.bass');
+// const audioBass = document.querySelector('.a-bass');
 
-const crash = document.querySelector('.crash');
-const audioCrash = document.querySelector('.a-crash');
+// const crash = document.querySelector('.crash');
+// const audioCrash = document.querySelector('.a-crash');
 
-const hat = document.querySelector('.hat');
-const audioHat = document.querySelector('.a-hat');
+// const hat = document.querySelector('.hat');
+// const audioHat = document.querySelector('.a-hat');
 
-const snare = document.querySelector('.snare');
-const audioSnare = document.querySelector('.a-snare');
+// const snare = document.querySelector('.snare');
+// const audioSnare = document.querySelector('.a-snare');
 
-const tom = document.querySelector('.tom');
-const audioTom = document.querySelector('.a-tom');
+// const tom = document.querySelector('.tom');
+// const audioTom = document.querySelector('.a-tom');
 
-const settingBass = document.querySelectorAll('.setting__bass');
+// const floorTom = document.querySelector('.floor-tom');
+// const audioFloorTom = document.querySelector('.a-floor-tom');
 
-
-
-bass.addEventListener('click', () => {
-  audioBass.play();
-});
-
-crash.addEventListener('click', () => {
-  audioCrash.play();
-});
-
-hat.addEventListener('click', () => {
-  audioHat.play();
-});
-
-snare.addEventListener('click', () => {
-  audioSnare.play();
-});
-
-tom.addEventListener('click', () => {
-  audioTom.play();
-});
-
-document.addEventListener('keydown', (e) => {
-  if (e.code === 'KeyZ') {
-    audioBass.play();
-    bass.classList.add('play-blue');
-  }
-  if (e.code === 'KeyX') {
-    audioCrash.play();
-  }
-  if (e.code === 'KeyC') {
-    audioHat.play();
-  }
-  if (e.code === 'KeyV') {
-    audioSnare.play();
-  }
-  if (e.code === 'KeyB') {
-    audioTom.play();
-  }
-});
-document.addEventListener('keyup', (e) => {
-  if (e.code === 'KeyZ') {
-    bass.classList.remove('play-blue');
-  }
-})
+// const ride = document.querySelector('.ride');
+// const audioRide = document.querySelector('.a-ride');
 
 
-for (let i = 0; i < settingBass.length; i++) {
-  settingBass[i].addEventListener('click', () => {
-    settingBass[i].classList.toggle('setting__bass--active');
-  });
+
+
+
+// bass.addEventListener('click', () => {
+//   audioBass.play();
+// });
+
+// crash.addEventListener('click', () => {
+//   audioCrash.play();
+// });
+
+// hat.addEventListener('click', () => {
+//   audioHat.play();
+// });
+
+// snare.addEventListener('click', () => {
+//   audioSnare.play();
+// });
+
+// tom.addEventListener('click', () => {
+//   audioTom.play();
+// });
+
+// floorTom.addEventListener('click', () => {
+//   audioFloorTom.play();
+// });
+
+// ride.addEventListener('click', () => {
+//   audioRide.play();
+// });
+
+// window.addEventListener('keydown', (e) => {
+//   if (e.code === 'KeyX') {
+//     audioBass.play();
+//   }
+//   if (e.code === 'KeyW') {
+//     audioCrash.play();
+//   }
+//   if (e.code === 'KeyA') {
+//     audioHat.play();
+//   }
+//   if (e.code === 'KeyS') {
+//     audioSnare.play();
+//   }
+//   if (e.code === 'KeyT') {
+//     audioRide.play();
+//   }
+//   if (e.code === 'KeyF') {
+//     audioFloorTom.play();
+//   }
+//   if (e.code === 'KeyD') {
+//     audioTom.play();
+//   }
+// });
+// // document.addEventListener('keyup', (e) => {
+// //   if (e.code === 'KeyZ') {
+// //     bass.classList.remove('play-blue');
+// //   }
+// // })
+
+
+function removeTransition(e) {
+  if (e.propertyName !== 'transform') return;
+  e.target.classList.remove('playing');
 }
+
+function drum(e) {
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+
+  if (!audio) return;
+
+  key.classList.add('playing');
+  audio.currentTime = 0;
+  audio.play();
+}
+
+const keys = Array.from(document.querySelectorAll('.key'));
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+window.addEventListener('keydown', drum);
+// keys.forEach(key => key.addEventListener('click', drum));
+
+

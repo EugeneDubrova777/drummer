@@ -1,44 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
-  background-color: rgb(24, 119, 192);
+  background-color: #006F48;
+  text-align: center;
 }
 
-
-
-.bass:active {
-  background-color: blue;
-}
-.play-blue {
-  background-color: blue;
+.title {
+  color: #FF9700;
 }
 
-
-
-
-
-
-.setting {
-  width: 500px;
-  height: 250px;
-  background-color: antiquewhite;
+.drums {
+  margin-top: 3%;
 }
 
-.setting__basses {
-  width: 480px;
-  height: 40px;
-  background-color: black;
-  margin-left: 10px;
-
+.drum {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
+.drum kbd {
+  font-size: 24px;
+  font-weight: 600;
+}
+.row {
+  width: 40%;
+  background-color: #60D5AC;
+  margin: 0 auto;
 
-.setting__bass {
-  width: 28px;
-  height: 28px;
-  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.top-row {
+  border-radius: 20px 20px 0 0;
+}
+/* .middle-row {
+
+} */
+.bottom-row {
+  border-radius: 0 0 20px 20px;
 }
 
-.setting__bass--active {
-  background-color: yellow;
+.image {
+  width: 10vw;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.image:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.image:not(:hover) {
+  transition: 0.3s;
+}
+
+.animate {
+  transform: scale(1.2);
+  transition: 0.3s;
 }
